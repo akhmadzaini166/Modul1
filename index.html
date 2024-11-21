@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#galery">Galery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="images/IMG (17).jpg" alt="Profile Photo" class="profile-photo">
+            <h1>Hello, I'm [Zen]</h1>
+            <p>A Young Man Who Wants To Make Peace.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I am a student from Muhammadiyah University of Malang</p>
+    </p>At Muhammadiyah University of Malang, I majored in Informatic Engineering</p>
+        </p>I come from the city of Probolinggo</p>
+        </p>You can follow my Instagram @zensementara</p>
+    </p>Thank you</p>
+    </section>
+
+    <section id="galery" class="galery">
+        <h2>My Galery</h2>
+        <div class="galery-list">
+            <div class="galery-card" onclick="openLightbox(0)">
+                <h3>Galery 1</h3>
+                <p>Nature Album</p>
+            </div>
+            <div class="galery-card" onclick="openLightbox(1)">
+                <h3>Galery 2</h3>
+                <p>Friend Album</p>
+            </div>
+            <div class="galery-card" onclick="openLightbox(2)">
+                <h3>Galery 3</h3>
+                <p>Billiard Album</p>
+            </div>
+            <div class="galery-card" onclick="openLightbox(3)">
+                <h3>Galery 4</h3>
+                <p>Event Album</p>
+            </div>
+        </div>
+    </section>
+
+   <!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&#10006;</span>
+    <button id="previous-button" class="previous-button" onclick="previousImage()">Previous</button>
+    <img id="lightbox-image" src="" alt="Gallery Image">
+    <button id="next-button" class="next-button" onclick="nextImage()">Next</button>
+</div>
+
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+    </form>
+</section>
+
+
+    <footer>
+        <p>&copy; 2024 [akhmadzainy07@gmail.com]. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
